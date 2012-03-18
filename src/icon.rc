@@ -1,0 +1,27 @@
+IDI_ICON1           ICON    DISCARDABLE     "cm.ico"
+1 VERSIONINFO
+FILEVERSION 0,0,0,1
+PRODUCTVERSION 0,0,0,1
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "040904E4"
+  {
+   VALUE "Comments", "Extra comments\000"
+   VALUE "CompanyName", "Cheatos-SBI\000"
+//   VALUE "SB-I Stamp", "Don't Steal!\000"
+   VALUE "FileDescription", "CheatMaster Executable\000"
+   VALUE "FileVersion", "0.0.0.1\000"
+   VALUE "InternalName", "CM.exe\000"
+   VALUE "LegalCopyright", "Copyright (C) Cheatos 2010\000"
+//   VALUE "LegalTrademarks", "Extra legal trademarks\000"
+//   VALUE "OriginalFilename", "Extra Original filename\000"
+//   VALUE "ProductName", "Extra product name\000"
+   VALUE "ProductVersion", "0.0.0.1\000"
+  }
+ }
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 0x0409, 0x04E4
+ }
+}
