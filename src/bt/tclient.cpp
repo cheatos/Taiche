@@ -15,20 +15,16 @@
     along with Taiche.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef POPULATECLIENTFILES_H
-#define POPULATECLIENTFILES_H
+#include "tclient.h"
 
-#include <QMainWindow>
-#include <QMessageBox>
-#include <QStringList>
-#include <QDir>
-#include <QtXml>
-#include <QApplication>
-
-class populateClientFiles : public QMainWindow
+TClient::TClient(QObject *parent) :
+    QObject(parent)
 {
-public:
-     QStringList popClientFiles();
-};
+}
 
-#endif // POPULATECLIENTFILES_H
+QString TClient::GeneratePeerID()
+{
+    QString generatedPID = "";
+
+    return generatedPID;
+}

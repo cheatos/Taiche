@@ -15,8 +15,22 @@
     along with Taiche.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "clientfile.h"
+#ifndef TCLIENT_H
+#define TCLIENT_H
 
-clientFile::clientFile()
+#include <QObject>
+
+class TClient : public QObject
 {
-}
+    Q_OBJECT
+public:
+    explicit TClient(QObject *parent = 0);
+    QString GeneratePeerID();
+    
+signals:
+    
+public slots:
+    
+};
+
+#endif // TCLIENT_H

@@ -7,15 +7,17 @@ TARGET = qCheater
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
-    populateclientfiles.cpp \
     bt/metainfo.cpp \
     bt/bencodeparser.cpp \
-    clientfile.cpp
+    bt/tclient.cpp \
+    bt/ClientsHelper.cpp
 HEADERS += mainwindow.h \
-    populateclientfiles.h \
     bt/metainfo.h \
     bt/bencodeparser.h \
     GZipHelper.h \
-    clientfile.h
-FORMS += mainwindow.ui
+    bt/tclient.h \
+    bt/ClientsHelper.h \
+    mainwindow.h
+FORMS += \
+    mainwindow.ui
 RC_FILE = icon.rc

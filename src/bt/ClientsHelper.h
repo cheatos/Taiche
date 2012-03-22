@@ -15,9 +15,20 @@
     along with Taiche.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "tracker.h"
+#ifndef CLIENTSHELPER_H
+#define CLIENTSHELPER_H
 
+#include <QMainWindow>
+#include <QMessageBox>
+#include <QStringList>
+#include <QDir>
+#include <QtXml>
+#include <QApplication>
 
-/*
+class ClientsHelper : public QMainWindow
+{
+public:
+     QStringList GetClients();
+};
 
-*/
+#endif // CLIENTSHELPER_H

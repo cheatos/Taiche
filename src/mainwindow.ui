@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>673</width>
-    <height>301</height>
+    <width>829</width>
+    <height>508</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>CheatMaster v.0.1</string>
+   <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget">
+  <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
     <property name="enabled">
      <bool>true</bool>
@@ -21,9 +21,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>571</width>
-      <height>281</height>
+      <y>220</y>
+      <width>801</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -55,7 +55,7 @@
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Main</string>
+      <string>Current</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
@@ -63,43 +63,17 @@
         <x>10</x>
         <y>10</y>
         <width>531</width>
-        <height>111</height>
+        <height>121</height>
        </rect>
       </property>
       <property name="title">
        <string>Torrent </string>
       </property>
-      <widget class="QToolButton" name="browseTorrent">
-       <property name="geometry">
-        <rect>
-         <x>500</x>
-         <y>20</y>
-         <width>25</width>
-         <height>19</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>...</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="tFileName">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>481</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-      </widget>
       <widget class="QWidget" name="gridLayoutWidget">
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>50</y>
+         <y>20</y>
          <width>511</width>
          <height>53</height>
         </rect>
@@ -158,7 +132,7 @@
        <rect>
         <x>10</x>
         <y>130</y>
-        <width>246</width>
+        <width>251</width>
         <height>101</height>
        </rect>
       </property>
@@ -235,22 +209,22 @@
      <widget class="QGroupBox" name="groupBox_3">
       <property name="geometry">
        <rect>
-        <x>260</x>
-        <y>130</y>
-        <width>281</width>
-        <height>141</height>
+        <x>550</x>
+        <y>10</y>
+        <width>211</width>
+        <height>211</height>
        </rect>
       </property>
       <property name="title">
        <string>Stats</string>
       </property>
-      <widget class="QWidget" name="layoutWidget">
+      <widget class="QWidget" name="layoutWidget_2">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>261</width>
-         <height>110</height>
+         <width>191</width>
+         <height>181</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
@@ -354,6 +328,35 @@
        <string>Client to use:</string>
       </property>
      </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>130</y>
+        <width>271</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Log</string>
+      </property>
+      <widget class="QTextEdit" name="logList_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -407,7 +410,7 @@
         <string>Test Announce</string>
        </property>
       </widget>
-      <widget class="QWidget" name="layoutWidget">
+      <widget class="QWidget" name="layoutWidget_3">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -495,15 +498,15 @@
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
-      <string>Log</string>
+      <string>Global Log</string>
      </attribute>
      <widget class="QTextEdit" name="logList">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>531</width>
-        <height>231</height>
+        <width>761</width>
+        <height>221</height>
        </rect>
       </property>
       <property name="frameShape">
@@ -527,49 +530,38 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_4">
-     <attribute name="title">
-      <string>Tools</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_5">
-     <attribute name="title">
-      <string>About</string>
-     </attribute>
-    </widget>
    </widget>
-   <widget class="QPushButton" name="actionButton">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
+   <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>10</x>
       <y>10</y>
-      <width>75</width>
-      <height>23</height>
+      <width>801</width>
+      <height>201</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Start</string>
+    <property name="sortingEnabled">
+     <bool>true</bool>
     </property>
-   </widget>
-   <widget class="QPushButton" name="exitButton">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>40</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
+    <property name="columnCount">
+     <number>2</number>
     </property>
-    <property name="text">
-     <string>Exit</string>
-    </property>
+    <column/>
+    <column/>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>829</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>

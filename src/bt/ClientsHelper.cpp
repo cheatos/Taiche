@@ -15,9 +15,21 @@
     along with Taiche.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "populateclientfiles.h"
+#include "ClientsHelper.h"
 
-QStringList populateClientFiles::popClientFiles()
+
+enum PIDType { ALPHANUMERIC, HEX };
+
+typedef struct BittorrentClient
+{
+    QString BName;
+    QString Version;
+    QString Author;
+    int PIDLength;
+    PIDType PIDTy;
+} BTClient;
+
+QStringList ClientsHelper::GetClients()
 {
     QStringList list;
 
@@ -49,3 +61,4 @@ QStringList populateClientFiles::popClientFiles()
 
     return list;
 }
+
